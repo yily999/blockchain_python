@@ -61,13 +61,12 @@ def create_genesis_block():
 
 # 配置信息和变量定义
 # 本矿工的ip
-my_node = 'http://10.2.29.126:5000/'  # 修改成当前电脑ip
+my_node = 'http://127.0.0.1:5000/'  # 单机本地节点
 # 本矿工地址
 miner_address = "miner_winOFFICE"
 # 所有矿工的ip
-node1 = 'http://10.2.29.126:5000/'  # 矿工1 911台式机
-node2 = 'http://10.2.29.165:5000/'  # 矿工2 我的win笔记本
-all_nodes = {node1, node2}
+node1 = 'http://127.0.0.1:5000/'  # 本机矿工
+all_nodes = {node1}
 # 其他节点的信息, 902的矿工
 peer_nodes = all_nodes.difference({my_node})
 # 设置超时时间为2秒

@@ -7,10 +7,8 @@ import requests
 # 设置超时时间为2秒
 timeout = 2
 # 配置节点信息
-node1 = 'http://10.2.29.126:5000/'    # 矿工1 911台式机
-node2 = 'http://10.2.29.165:5000/'    # 矿工2 902台式机
-node3 = 'http://10.2.29.240:5000/'    # 矿工3 我的 macbook
-all_nodes = {node1, node2, node3}
+node1 = 'http://127.0.0.1:5000/'    # 本机矿工
+all_nodes = {node1}
 
 # 交易信息
 data = {

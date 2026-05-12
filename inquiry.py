@@ -33,13 +33,12 @@ class Blockchain:
 # 设置超时时间为2秒
 timeout = 2
 # 配置节点信息
-node1 = 'http://10.2.29.126:5000/'    # 矿工1 winOFFICE
-node2 = 'http://10.2.29.165:5000/'    # 矿工2 winAD
-all_nodes = {node1, node2}
+node1 = 'http://127.0.0.1:5000/'    # 本机矿工
+all_nodes = {node1}
 
 for node_url in all_nodes:
     try:
-        blockchain = requests.get(my_node + 'blocks', timeout=timeout)
+        blockchain = requests.get(node_url + 'blocks', timeout=timeout)
         blockchain = pickle.loads(blockchain.content)
         blocks = []
         for block in blockchain:
