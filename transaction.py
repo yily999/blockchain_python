@@ -12,9 +12,9 @@ all_nodes = {node1}
 
 # 交易信息
 data = {
-    'from': 'dsdscdsce23f23ffdscdscds',
-    'to': 'dscwevervfevbgrtbtrgverc2',
-    'amount': 6
+    'from': 'A',
+    'to': 'B',
+    'amount': 5
 }
 
 # 把一笔交易同时发给所有节点（矿工）来记录, POST请求
